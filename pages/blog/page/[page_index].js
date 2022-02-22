@@ -10,7 +10,7 @@ import Pagination from "../../../components/Pagination";
 
 export async function getStaticPaths(){
     const files = fs.readdirSync(path.join('posts'));
-    console.log(POSTS_PER_PAGE);
+    //console.log(POSTS_PER_PAGE);
     const numPages = Math.ceil(files.length / POSTS_PER_PAGE)
 
     let paths = [];
